@@ -16,5 +16,6 @@ request =  requests.get(f"  https://api.openweathermap.org/data/2.5/weather?q={c
 weather= request.json()['weather'][0]['main'] 
 temp = round(request.json()['main']['temp'] )
 
+print(f"{request.json()}")
 print (f"Weather in {city} is: {weather}")
 print (f"The temperature in {city} is : {temp} Fahrenheit")
